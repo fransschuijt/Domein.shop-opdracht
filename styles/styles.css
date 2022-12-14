@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -10,40 +12,132 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-h1
 
 /*////////////////////////
     1. Global Styles
+    grijs #899CA0 en donkergroen #1C2B32
 ////////////////////////*/
+* {
+    box-sizing: border-box;
+}
 
+h2 {
+    text-align: center;
+    color: #1C2B32;
+    font-weight: bolder;
+    font-size: x-large;
+}
 
+main {
+    margin: auto;
+    max-width: 1000px;
+}
+
+a {
+    color: #899CA0;
+    text-underline: #899CA0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+::placeholder {
+    color: #1C2B32;
+    font-size: medium;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
-
+body {
+    font-family: 'poppins', sans-serif;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
+header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
+h1 {
+    font-weight: 700;
+    font-size: 100px;
+    color: #1C2B32;
+  margin-bottom: 1px;
+}
+
+.header-layout {
+    text-align: center;
+    color: #1C2B32;
+    margin: auto;
+    padding: 200px;
+    max-width: 1000px;
+    position: relative;
+    top: -170px;
+}
+
+.domain-check {
+    height: 50px;
+    width: 300px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #1C2B32;
+}
+
+.header-button {
+    margin-left: -5px;
+    height: 50px;
+    width: 250px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    background-color: #1C2B32;
+    border: 2px solid #1C2B32;
+}
 
 
 /*///////////// 3.2 Testimonial /////////////*/
 
 
-
 /*///////////// 3.3 Support /////////////*/
+#callcenter {
+    width: 100%;
+    border-radius: 25px;
+}
 
-
+.contact-button {
+    border-radius: 25px;
+    color: white;
+    background-color: #1C2B32;
+    border: 2px solid #1C2B32;
+    padding: 20px 30px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
-
+details > summary {
+    cursor: pointer;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    width: 100%;
+    padding: 30px;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-size: small;
+    background-color: #1C2B32;
+    border: 2px solid #1C2B32;
+}
